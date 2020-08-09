@@ -1,5 +1,5 @@
 const Telegraf = require('telegraf')
-// const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 
 const bot = new Telegraf("1332711625:AAGVh3akaKlM7qu06QTnE5ewGAetuJQLZzM")
