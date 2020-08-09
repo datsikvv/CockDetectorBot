@@ -1,4 +1,4 @@
-import Telegraf from 'telegraf'
+const Telegraf = require('telegraf')
 //const PORT = process.env.PORT || 3000;
 
 
