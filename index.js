@@ -1,4 +1,8 @@
 const Telegraf = require('telegraf')
+const PORT = process.env.PORT || 3000;
+app.listen (PORT, () => {
+    console.log (`Наш додаток працює на порту $ {PORT}`);
+});
 
 const bot = new Telegraf("1332711625:AAGVh3akaKlM7qu06QTnE5ewGAetuJQLZzM")
 bot.start((ctx) => ctx.reply('go away'))
