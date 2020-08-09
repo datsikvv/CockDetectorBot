@@ -55,4 +55,5 @@ const keyboard = Markup.inlineKeyboard([
   bot.action('delete', ({ deleteMessage }) => deleteMessage())
 bot.on('dice', (ctx) => ctx.reply(`Value: ${ctx.message.dice.value}`))
 
-bot.launch();
+//bot.launch();
+module.exports = bot
