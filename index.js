@@ -1,4 +1,4 @@
-const Telegraf = require('telegraf')
+import Telegraf from 'telegraf'
 //const PORT = process.env.PORT || 3000;
 
 
@@ -11,4 +11,3 @@ bot.launch()
 bot.hears('good', (ctx) => ctx.reply('Im glad to hear this'))
 bot.hears('привет', (ctx) => ctx.reply('здарова'))
 bot.hears('Катя', (ctx) => ctx.reply('Самая красивая'))
-bot.on('sticker', (ctx) => ctx.reply('👍'))
