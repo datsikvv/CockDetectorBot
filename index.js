@@ -1,8 +1,9 @@
 const Telegraf = require('telegraf');
+const Markup = require('telegraf/markup');
 //const PORT = process.env.PORT || 3000;
 
-
-const bot = new Telegraf("1332711625:AAGVh3akaKlM7qu06QTnE5ewGAetuJQLZzM");
+//CockDetectorBot
+const bot = new Telegraf("1374393558:AAG_A5VGxPzO4EqFYL8X1PsrRY_NDRPKJjk");
 bot.start((ctx) => ctx.reply('go away'));
 bot.help((ctx) => ctx.reply('Send me a sticker'));
 bot.on('sticker', (ctx) => ctx.reply('hhhhhhhhhhh'));
@@ -21,6 +22,16 @@ bot.hears('ростик', (ctx) => ctx.reply('Петушок'));
 
 bot.command('oldschool', (ctx) => ctx.reply('Hello'))
 
+bot.command('custom', ({ reply }) => {
+    return reply('Custom buttons keyboard', Markup
+      .keyboard([
+        ['Денис', 'Вова', 'Ростик'], // Row1 with 3 buttons
+      ])
+      .oneTime()
+      .resize()
+      .extra()
+    )
+  })
 
 
 bot.launch();
