@@ -4,10 +4,10 @@ const Extra = require('telegraf/extra');
 //const PORT = process.env.PORT || 3000;
 
 //drink
-// const bot = new Telegraf("1332711625:AAGVh3akaKlM7qu06QTnE5ewGAetuJQLZzM");
+// const bot = new Telegraf("133***11625:AAGVh3ak****06QTnE5ewGAetuJQLZzM");
 
 //test
- const bot = new Telegraf("451817766:AAH-oW67GgWnR24TFzzbENgitGZymh5Fk60");
+ const bot = new Telegraf("451***766:AAH-oW67GgWnR****zzbENgitGZymh5Fk60");
 
 bot.start((ctx) => ctx.reply('go away'));
 bot.help((ctx) => ctx.reply('Send me a sticker'));
