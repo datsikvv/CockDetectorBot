@@ -3,7 +3,7 @@ const Markup = require('telegraf/markup');
 //const PORT = process.env.PORT || 3000;
 
 //CockDetectorBot
-const bot = new Telegraf("1374393558:AAG_A5VGxPzO4EqFYL8X1PsrRY_NDRPKJjk");
+const bot = new Telegraf("137****58:AAG_A5VGxPzO4*******Y_NDRPKJjk");
 bot.start((ctx) => ctx.reply('go away'));
 bot.help((ctx) => ctx.reply('Send me a sticker'));
 bot.on('sticker', (ctx) => ctx.reply('hhhhhhhhhhh'));
